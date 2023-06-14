@@ -16,4 +16,9 @@ Despues de corregir lo anterior, pude ejecutar el boton y se observo lo siguient
  
         a) corregir linea 46, const ATTEMPS = 5  por const ATTEMPS = 10
         b) cambie la funcion en la linea 44 let randomNumber = Math.random() * 10; por la funcion let randomNumber = Math.floor(Math.random() * 100) + 1. ya que la funcion anterior genera numeros aleatorios decimales. en cambio la nueva funcion genera solo enteros.
+        c) en la linea 31, cambie el input de tipo text a tipo number para que acepte numeros enteros y no letras.
+        d) agregue una validacion para asegurarme que el valor que ingrese el usuario en el input sea un numero entero. ya que con el cambio anterior no se pueden agregar letras y muestra una alerta cuando se agrega un numero con punto decimal o coma, ademas toma el primer valor antes del signo. ejemplo: ingresa 56.5 solo tomara el 56, el resto lo ignora.
+        e) Se actualizo el mensaje de felicitanes para que muestre el color correcto si el usuario adivina antes de los 10 intentos. ya que antes lo mostraba en rojo, ahora lo muestra en verde.
+        f)se actualizo el mensaje cuando el usuario no adivina el numero despues de los 10 intentos, ahora muestra el mensaje perdiste... el numero correcto era X (x es el numero a adivinar) y el bckg del mensaje es rojo.
+        g) se cambio el estilo de los mensajes anteriores para que muestre en blanco sobre fondo negro.
         
