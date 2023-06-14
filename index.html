@@ -41,9 +41,9 @@
 </body>
 
 <script>
-  let randomNumber = Math.random() * 10;
+  let randomNumber = Math.floor(Math.random() * 100) + 1 // <--- CAMBIO
 
-  const ATTEMPS = 5;
+  const ATTEMPS = 10;    // <--- CAMBIO
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
   const lowOrHi = document.querySelector('.lowOrHi');      //Primer error que encontre era la falta del punto para poder seleccionar la clase lowOrHi
