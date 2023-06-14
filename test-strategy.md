@@ -15,3 +15,5 @@ Despues de corregir lo anterior, pude ejecutar el boton y se observo lo siguient
  Soluciones>
  
         a) corregir linea 46, const ATTEMPS = 5  por const ATTEMPS = 10
+        b) cambie la funcion en la linea 44 let randomNumber = Math.random() * 10; por la funcion let randomNumber = Math.floor(Math.random() * 100) + 1. ya que la funcion anterior genera numeros aleatorios decimales. en cambio la nueva funcion genera solo enteros.
+        
